@@ -1,0 +1,232 @@
+p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 751px) {
+  .feild {
+    /* height: 100vh; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: #800022;
+  }
+
+  .feild-conatiner {
+    height: 100%;
+    width: 100%;
+    margin: 30px;
+
+    background: repeating-linear-gradient(
+      to right,
+      #800022,
+      #800022 80px,
+      #550015 80px,
+      #550015 160px
+    );
+  }
+
+  .feild-main {
+    background-image: url("../assets/feildbg.png");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* .........................change here for height................................ */
+    height: 80vh;
+    padding: 40px 0;
+  }
+  .colum {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .players {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .player-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .player-number {
+    position: relative;
+    top: 12px;
+  }
+  .player {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .player-home {
+    background-image: url("../assets/home.png");
+  }
+
+  .away-players {
+    flex-direction: row-reverse;
+  }
+  .player-away {
+    background-image: url("../assets/away.png");
+  }
+
+  .a-left,
+  .a-right {
+    margin-inline-end: 40px;
+  }
+  .a-cl,
+  .a-cr {
+    margin-inline-end: 15px;
+  }
+  .h-left,
+  .h-right {
+    margin-inline-start: 40px;
+  }
+  .h-cl,
+  .h-cr {
+    margin-inline-start: 15px;
+  }
+}
+
+/* tablate view */
+
+@media only screen and (max-width: 750px) {
+  .feild {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #800022;
+  }
+  .feild-conatiner {
+    margin: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: repeating-linear-gradient(
+      to right,
+      #800022,
+      #800022 80px,
+      #550015 80px,
+      #550015 160px
+    );
+  }
+
+  .feild-main {
+    background-image: url("../assets/mobilebg.png");
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+  }
+  .colum {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+  }
+  .players {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+  .player-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .player-number {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+  }
+  .player-name {
+    width: "80px";
+    overflow-wrap: " break-word";
+  }
+  .player {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .player-home {
+    background-image: url("../assets/home.png");
+  }
+  .away-players {
+    flex-direction: column-reverse;
+  }
+  .player-away {
+    background-image: url("../assets/away.png");
+  }
+  .a-left,
+  .a-right {
+    margin-block-end: 20px;
+    justify-content: flex-end;
+  }
+  .a-cl,
+  .a-cr {
+    margin-block-end: 10px;
+    justify-content: flex-end;
+  }
+  .h-left,
+  .h-right {
+    margin-block-start: 20px;
+    justify-content: flex-start;
+  }
+  .h-cl,
+  .h-cr {
+    margin-block-start: 10px;
+    justify-content: flex-start;
+  }
+  .a-c {
+    justify-content: flex-end;
+  }
+  .h-c {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .player-name {
+    width: 50px;
+    font-size: 10px;
+  }
+  .player {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
